@@ -17,8 +17,8 @@ services:
         target: /var/lib/mysql
 
   liferay:
+    image: liferay/portal:7.3.5-ga6
     image: liferay/portal:7.2.1-ga2
-    image: liferay/portal:7.3.0-ga1
     container_name: lr
     environment:
       - LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_DRIVER_UPPERCASEC_LASS_UPPERCASEN_AME=com.mysql.jdbc.Driver
