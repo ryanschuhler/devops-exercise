@@ -35,6 +35,7 @@ services:
       - type: volume
         source: liferay-data
         target: /opt/liferay/data
+      - ./build/docker/deploy:/opt/liferay/deploy
     depends_on:
       - database
 
