@@ -82,7 +82,7 @@ public class HelloWorldPortlet extends MVCPortlet {
 			releaseInfo = ReleaseInfo.getReleaseInfo();
 		}
 
-		printWriter.print(StringBundler.concat("<p>Your favorite site must be<a href='https://www.google.com/search?q=",
+		printWriter.print(StringBundler.concat("<p>Your favorite site must be <a href='https://www.google.com/search?q=",
 			HttpUtil.encodeURL("https://www.liferay.com"), "'>Liferay</a></p>"));
 		printWriter.print(
 			StringBundler.concat("Welcome to ", releaseInfo, "."));
